@@ -1,0 +1,9 @@
+git status
+git add .
+git status
+git commit -m "comments"
+--global user.name ""
+--global user.email you@example.com
+
+git push
+browser-sync start --server --directory --files "**/*"

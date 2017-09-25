@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Name Calculator</title>
+  </head>
+  <body ng-app="NameCalculator">
+<h1>HTML Custom Attributes</h1>
+<div id="target" greeting="Hello" ng-app="myTestApp">
+  <section>section 1
+    <article>article 1</article>
+  </section>
+</div>
+<script>
+var elem = document.getElementById('target');
+console.log(elem);
+console.log(elem.getAttribute('greeting'));
+
+var elem2 = document.querySelector("[ng-app]");
+console.log(elem2);
+console.log(elem2.getAttribute('ng-app'));
+
+</script>
+  </body>
+</html>
